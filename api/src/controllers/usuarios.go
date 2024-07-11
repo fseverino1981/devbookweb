@@ -1,5 +1,6 @@
 package controllers
 
+
 import (
 	"api/api/src/autenticacao"
 	"api/api/src/banco"
@@ -185,7 +186,6 @@ func DeletarUsuario(w http.ResponseWriter, r *http.Request) {
 	}
 
 	respostas.JSON(w, http.StatusNoContent, nil)
-
 }
 
 // SeguirUsuario permite que um usuário siga outro
